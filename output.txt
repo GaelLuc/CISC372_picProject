@@ -1,0 +1,14 @@
+Script started on Fri Nov  7 00:11:44 2025
+[gael@r1n01 CISC372_picProject]$ export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+[gael@r1n01 CISC372_picProject]$ srun ./image-openmp pic1.jpg edge
+Starting convolution with 4 threads...
+Convolution took 6 seconds
+[gael@r1n01 CISC372_picProject]$ srun ./image-pthread pic1.jpg edge
+This is the start time: 1762492437
+Using 64 threads.
+This is the end time: 1762492442
+Took 5 seconds
+[gael@r1n01 CISC372_picProject]$ exit
+exit
+
+Script done on Fri Nov  7 00:14:30 2025
